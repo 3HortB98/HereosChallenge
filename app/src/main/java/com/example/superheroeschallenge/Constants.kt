@@ -9,4 +9,4 @@ const val TABLE_NAME_12 = "Heroes2012"
 const val TABLE_NAME_15 = "Heroes2015"
 const val TABLE_NAME_18= "Heroes2018"
 const val DATABASE_NAME = "Superheroes_Database"
-const val DATABASE_VERSION = 1
+const val DATABASE_VERSION = 2

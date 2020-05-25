@@ -26,7 +26,7 @@ class HeroAdapter :RecyclerView.Adapter<HeroAdapter.HeroViewHolder>(){
     override fun getItemCount() = heroData.size
 
     override fun onBindViewHolder(heroViewHolder: HeroViewHolder, position: Int) {
-        heroViewHolder.heroName.text = heroData[position].Name.toString()
+        heroViewHolder.heroName.text = heroData[position].Name
         heroViewHolder.heroScore.text = heroData[position].Score.toString()
 
     }
