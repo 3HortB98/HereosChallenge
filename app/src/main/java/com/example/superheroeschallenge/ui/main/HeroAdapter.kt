@@ -6,13 +6,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.superheroeschallenge.HeroItem
+import com.example.superheroeschallenge.Heroes
 import com.example.superheroeschallenge.R
 
 class HeroAdapter :RecyclerView.Adapter<HeroAdapter.HeroViewHolder>(){
-    private val heroData = ArrayList<HeroItem>()
+    private val heroData = ArrayList<Heroes>()
 
-    fun setData(heroes : List<HeroItem>){
+    fun setData(heroes : List<Heroes>){
         heroData.clear()
         heroData.addAll(heroes)
         notifyDataSetChanged()

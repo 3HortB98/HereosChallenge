@@ -10,3 +10,6 @@ const val TABLE_NAME_15 = "Heroes2015"
 const val TABLE_NAME_18= "Heroes2018"
 const val DATABASE_NAME = "Superheroes_Database"
 const val DATABASE_VERSION = 2
+
+const val CACHE_SIZE :Long= 5 * 1024 * 1024
+const val API_TIMEOUT :Long = 30

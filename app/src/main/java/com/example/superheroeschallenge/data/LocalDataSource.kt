@@ -5,8 +5,7 @@ import androidx.room.Room
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.superheroeschallenge.DATABASE_NAME
-import com.example.superheroeschallenge.HeroItem
-import io.reactivex.Maybe
+import com.example.superheroeschallenge.Heroes
 
 class LocalDataSource(private val application: Application):DataSource {
     val MIGRATION_1_2: Migration = object : Migration(1, 2) {
@@ -20,7 +19,7 @@ class LocalDataSource(private val application: Application):DataSource {
     }
     override fun getHeroes() = database.heroDAO().getAllHeroes()
 
-    override fun addHero(hero: HeroItem) {
+    override fun addHero(hero: Heroes) {
         database.heroDAO().addHero(hero)
     }
 }
